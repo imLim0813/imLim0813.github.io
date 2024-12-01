@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imlim0813.github.io/sitemap.xml
