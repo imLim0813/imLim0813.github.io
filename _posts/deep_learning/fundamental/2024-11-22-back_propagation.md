@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Back Propagation
+title : Back Propagation 
 categories : [Deep Learning, Fundamental]
 use_math : true
 ---
@@ -13,12 +13,12 @@ use_math : true
 ## 1. Introduction
 
 &nbsp;다층 신경망(Multi Layer Perceptron, MLP)의 등장으로 은닉층(hidden layer) 내 파라미터의 수가 급등하였습니다. <br> 
-이러한 많은 파라미터를 효과적으로 학습시키기 위해, 저자들은 오차 역전파(Back propagation) 알고리즘을 제안하였습니다.
+이러한 많은 파라미터를 효과적으로 학습시키기 위해, 저자들은 오차 역전파(Back propagation)를 제안하였습니다.
 
 
 ## 2. Back Propagation
 
-&nbsp;아래 그림을 기반으로, 논문에 기술된 오차 역전파(Back propagation) 알고리즘의 수식을 이해하면 됩니다. <br>
+&nbsp;아래 그림을 기반으로, 논문에 기술된 오차 역전파(Back propagation)의 수식을 이해하면 됩니다. <br>
 수식 (5) 이후, 해당 논문의 핵심인 연쇄법칙(chain rule)과 역방향(Backward) 연산이 이뤄집니다.
 
 |(1) $x_j$ = $\sum_{i} y_i w_{ji}$ <br><br> (2) $y_j$ = ${1} \over {1+\mathrm{e}^{-x_j}}$ <br><br> (3) $E$ = $1 \over 2$  $\sum_{c} \sum_{j}$ $(y_{j,c} - d_{j,c})^2$ <br><br> (4) $\frac {\partial E} {\partial {y_j}} = y_j - d_j$ <br><br> (5) $\frac {\partial E} {\partial {x_j}} = \frac {\partial E} {\partial {y_j}} \frac {\partial {y_j}}{\partial {x_j}} = \frac {\partial E} {\partial {y_j}} y_j (1-y_j)$ &nbsp; : &nbsp; 수식 (2) 참고 <br><br> (6) $\frac {\partial E} {\partial w_{ji}} = \frac {\partial E} {\partial x_{j}} \frac {\partial x_{j}} {\partial w_{ji}} = \frac {\partial E} {\partial x_{j}} y_i$ &nbsp; : &nbsp; 수식 (1) 참고 <br><br> (7) $\frac {\partial E} {\partial y_{i}} = \frac {\partial E} {\partial x_j} \frac {\partial x_j} {\partial y_i} = \sum_{j} \frac {\partial E} {\partial x_j} w_{ji}$ &nbsp; : &nbsp; 수식 (1) 참고 <br><br> (8) $\Delta {w} = -\epsilon \frac {\partial E}{\partial w}$ &nbsp; : &nbsp; 가중치 업데이트를 위해 사용될 편미분 값
@@ -46,4 +46,4 @@ use_math : true
 
 ## 5. Conclusion
 
-&nbsp; 심층 신경망(Deep Neural Network, DNN)의 목표는 주어진 입력에 대해 예측한 출력값과 실제 값 사이의 차이를 최소화하는 것입니다. 이를 위해 경사하강법(Gradient Descent)을 사용하여 파라미터를 반복적으로 업데이트하며, 이 과정에서 오차 역전파(Back propagation) 기법이 활용됩니다.
+&nbsp; 심층 신경망(Deep Neural Network, DNN)의 목표는 주어진 입력에 대해 예측한 출력값과 실제 값 사이의 차이를 최소화하는 것입니다. 이를 위해 경사하강법(Gradient Descent)을 사용하여 파라미터를 반복적으로 업데이트하며, 이 과정에서 오차 역전파(Back propagation)가 활용됩니다.
