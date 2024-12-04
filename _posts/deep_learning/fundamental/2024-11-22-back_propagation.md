@@ -46,4 +46,4 @@ use_math : true
 
 ## 5. Conclusion
 
-&nbsp; 심층 신경망(Deep Neural Network, DNN)의 목표는 주어진 입력에 대해 예측한 출력값과 실제 값 사이의 차이를 최소화하는 것입니다. 이를 위해 경사하강법(Gradient Descent)을 사용하여 파라미터를 반복적으로 업데이트하며, 이 과정에서 오차 역전파(Back propagation)가 활용됩니다.
+&nbsp; 심층 신경망(Deep Neural Network, DNN)의 목표는 주어진 입력에 대해 예측한 출력값과 실제 값 사이의 차이를 최소화하는 것입니다. 이를 위해 경사하강법(Gradient Descent)을 사용하여 파라미터를 반복적으로 업데이트하며, 이 과정에서 연쇄법칙(Chain rule)을 활용하여 파라미터를 효율적으로 업데이트하는 오차 역전파(Back propagation)가 활용됩니다.
