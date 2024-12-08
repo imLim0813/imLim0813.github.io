@@ -15,7 +15,7 @@ use_math : true
 &nbsp; 경사하강법(Gradient Descent)이란, 딥러닝 모델의 에러를 최소화하기 위해 손실함수의 기울기(경사)를 따라 파라미터를 점진적으로 업데이트해 나가는 최적화 방법을 의미합니다 &nbsp;( $ w = w - \eta \nabla J(w)$ ).<br><br>
 
 <figure class="GradientDescent">
-    <img src = "../assets/img/gradient_descent_simple.png" width="50%" height="50%" alt="Alt text">
+    <img src = "../assets/img/gradient_descent_simple.png" width="90%" height="90%" alt="Alt text">
     <div style="text-align : center;">
         <figcaption> Gradient Descent 설명 </figcaption>
     </div>
@@ -39,7 +39,7 @@ use_math : true
 <br>
 
 <figure class="SaddlePoint">
-    <img src = "../assets/img/saddle_point.png" width="50%" height="50%" alt="Alt text">
+    <img src = "../assets/img/saddle_point.png" width="90%" height="90%" alt="Alt text">
     <div style="text-align : center;">
         <figcaption> Global Minimum, Local Minimum, Saddle Point </figcaption>
     </div>
