@@ -8,11 +8,10 @@ use_math : true
 ## 0. Paper
 
 &nbsp;[Rumelhart, D. E., Hinton, G. E., & Williams, R. J. (1986). Learning representations by back-propagating errors. nature, 323(6088), 533-536.](https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf){:target="_blank"}
-<br>
 
 ## 1. Introduction
 
-&nbsp;다층 신경망(Multi Layer Perceptron, MLP)의 등장으로 은닉층(hidden layer) 내 파라미터의 수가 급등하였습니다. <br> 
+&nbsp;다층 퍼셉트론(Multi Layer Perceptron, MLP)의 등장으로 은닉층(hidden layer) 내 파라미터의 수가 급등하였습니다. <br> 
 이러한 많은 파라미터를 효과적으로 학습시키기 위해, 저자들은 오차 역전파(Back propagation)를 제안하였습니다.
 
 
