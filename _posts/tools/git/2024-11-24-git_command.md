@@ -18,3 +18,5 @@ categories : [Tools, Git]
 | restore | 수정한 내용을 취소하기 위한 명령어 |
 | revert | 커밋을 되돌리기 위한 명령어 (커밋 유지) |
 | reset | 커밋을 되돌리기 위한 명령어 (커밋 삭제) |
+| fetch | 원격 저장소 내용을 개인 컴퓨터 내 local directory로 가져오는 명령어 |
+| pull | 원격 저장소 내용을 개인 컴퓨터 내 working directory로 가져오는 명령어 |
