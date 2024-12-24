@@ -9,3 +9,8 @@ use_math : true
 
 &nbsp; 딥러닝을 학습시킬 때, 과소적합(Underfitting Problem)과 과대적합(Overfitting Problem)이 발생할 수 있습니다. <br>
 딥러닝 모델의 성능을 떨어뜨리는 해당 문제에 대해 알아보고, 해결 방안에 대해 포스팅하겠습니다.
+
+
+## 1. Dataset
+
+&nbsp; 딥러닝 모델의 학습에 큰 영향을 미치는것 중, 하나는 데이터 셋의 크기입니다. <br>
